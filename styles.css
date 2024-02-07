@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "chips";
+    src: url(chips.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #535355;
+}
+h1
+{
+    font-family: chips;
+    color: white;
+}
+canvas {
+    margin: 0;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+#juego {
+    position: relative;
+    width: 70vh;
+    height: 70vh;
+    background-image: url("piso.jpg");
+    background-size: cover; /* Otras opciones: contain, auto, etc. */
+    background-position: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#raton {
+    position: absolute;
+    width: 5.5vh;
+    height: 5.5vh;
+}
+img
+{
+    width:125%;
+}
+#juego:hover
+{
+    cursor: url('martillo.png'), auto;
+}
+button {
+    font-size: 2vw;
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 1vh 2vw;
+    margin: 3px;
+    box-sizing: border-box;
+    border: 10px;
+    border-color: white;
+    background-color: #535355;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+#modalxd {
+    border-radius: 10px;
+    font-size: 3vh;
+    text-align: justify;
+    max-width: 63vw;
+    max-height: 63vh;
+    width: 27vh;
+    height: 27vh;
+}
+#modalxd2 {
+    border-radius: 10px;
+    font-size: 3vh;
+    text-align: justify;
+    max-width: 63vw;
+    max-height: 63vh;
+}
+.texto_modal {
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+}
+.epico {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.imagen
+{
+    width:50%;
+}
+#modalxd::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+#modalxd2::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+
+
+@media (max-width: 500px) {
+    #juego {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    #raton {
+        width: 3vh;
+        height: 3vh;
+    }
+    button {
+        font-size: 7vw;
+        padding: 2vh 5vw;
+    }
+}

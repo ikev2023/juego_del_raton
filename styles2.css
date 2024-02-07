@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "chips";
+    src: url(chips.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+html, body {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    background-color: #6A6868;
+}
+#contenedor {
+    background-color: #535355;
+    padding: 5vw;
+    text-align: center;
+    color: white;
+    max-width: 800px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto;
+    border-radius: 15px;
+    font-family: chips;
+    font-size: 3vh;
+}
+#titulo {
+    text-align: center;
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8vh;
+    color: white;
+    font-weight: bold;
+    font-family: chips;
+}
+img
+{
+    width: 25%;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    #contenedor {
+        width: 35vh;
+        height: 35vh;
+        font-size: 2vh;
+    }
+    img
+    {
+        width:50% ;
+    }
+    #titulo {
+        text-align: center;
+        position: absolute; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 5vh;
+    }
+}

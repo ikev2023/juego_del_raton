@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Atrapar el Ratón</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="fallingLeavesCanvas"></canvas>
+    <h1>Juego del raton ;D</h1>
+    <h1 id="tiempito">Tiempo : 00:00</h1>
+    <h1 id="punto">Puntuacion:</h1>
+  <div id="juego" onclick="cambiar()">
+    <div id="raton" onclick="sumar()"><img src="raton.png" alt=""></div>
+  </div>
+  <dialog id="modalxd">
+    <div class="epico" id="div1">
+      <button id="btn_inicar" onclick="abrir2()">Inciar</button>
+      <img src="ratonsito.gif" alt="" class="imagen">
+    </div>
+    <div id="div2" class="epico" style="display: none;">
+      <h1 id="h1_modal" class="texto_modal">¡ESTAS LISTO?!</h1>
+      <img src="ratonsito.gif" alt="" class="imagen">
+    </div>
+</dialog>
+<dialog id="modalxd2">
+  <div class="epico">
+    <h1 id="h1_modal1" class="texto_modal">¡FELICIDADES!</h1>
+    <h1 id="h1_modal2" class="texto_modal">Tu puntaje fue de:</h1>
+    <img src="ratonsito.gif" alt="" class="imagen">
+    <button onclick="menu()">Regresar al menu</button>
+    <button onclick="rein()">Reintentar</button>
+  </div>
+</dialog>
+  <script src="script.js"></script>
+</body>
+</html>
